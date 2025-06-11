@@ -1,0 +1,120 @@
+/* components/reviewplan/SkillOverviewSection.css */
+
+/* Overview Section */
+.overview-content {
+  padding: 40px;
+}
+
+/* Weak Skills Alert */
+.weak-skills-alert {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+  border: 2px solid #ffc107;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.alert-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.alert-icon {
+  font-size: 24px;
+}
+
+.alert-header h3 {
+  color: #856404;
+  font-size: 20px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.alert-header p {
+  color: #856404;
+  margin: 5px 0 0 0;
+  font-size: 14px;
+}
+
+.weak-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.weak-skill-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.weak-skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.skill-header h4 {
+  color: #333;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.category-badge {
+  background: #e3f2fd;
+  color: #2196F3;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.skill-stats {
+  margin-bottom: 15px;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.stat-label {
+  color: #666;
+}
+
+.stat-value {
+  font-weight: 600;
+}
+
+.stat-value.confidence {
+  font-weight: 700;
+}
+
+.review-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF5722 100%);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.review-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+}

@@ -1,0 +1,169 @@
+/* components/reviewplan/LearningPlanSection.css */
+
+/* Plan Section */
+.plan-content {
+  padding: 40px;
+}
+
+.plan-timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.day-plan-card {
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.day-plan-card:hover {
+  border-color: #667eea;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.1);
+  background: white;
+}
+
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.day-info h3 {
+  color: #333;
+  font-size: 20px;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+}
+
+.plan-date {
+  color: #666;
+  font-size: 14px;
+}
+
+.day-summary {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.total-time {
+  background: #667eea;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.skill-count {
+  color: #666;
+  font-size: 14px;
+}
+
+.day-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.rest-day {
+  text-align: center;
+  padding: 30px;
+  color: #4CAF50;
+}
+
+.rest-icon {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.plan-skill {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.plan-skill:hover {
+  border-color: #667eea;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.skill-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-details .skill-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}
+
+.skill-details .skill-category {
+  color: #666;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.skill-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.duration {
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.review-type {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  background: #f0f0f0;
+  color: #666;
+}
+
+.study-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 13px;
+}
+
+.study-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .plan-timeline {
+    grid-template-columns: 1fr;
+  }
+}

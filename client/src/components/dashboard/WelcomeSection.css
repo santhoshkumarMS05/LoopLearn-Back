@@ -1,0 +1,81 @@
+/* components/dashboard/WelcomeSection.css */
+
+/* Welcome Section */
+.welcome-section1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  animation: fadeInDown 0.6s ease;
+}
+
+.welcome-content1 h1 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.welcome-content1 p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+}
+
+.quick-stats {
+  display: flex;
+  gap: 30px;
+}
+
+.stat-card2 {
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 0.3px solid rgba(207, 200, 200, 0.679);
+}
+
+.stat-icon {
+  font-size: 36px;
+}
+
+.stat-card2 h3 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.stat-card2 p {
+  color: white;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .quick-stats {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-section1 {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

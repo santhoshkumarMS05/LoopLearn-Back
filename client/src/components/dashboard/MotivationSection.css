@@ -1,0 +1,52 @@
+/* components/dashboard/MotivationSection.css */
+
+/* Motivation Section */
+.motivation-section {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.motivation-card {
+  text-align: center;
+}
+
+.motivation-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.motivation-card p {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.progress-ring {
+  position: relative;
+  display: inline-block;
+}
+
+.progress-text1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.progress-value1 {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #4CAF50;
+}
+
+.progress-label1 {
+  display: block;
+  font-size: 12px;
+  color: #666;
+}
